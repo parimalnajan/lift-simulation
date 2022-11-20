@@ -1,0 +1,11 @@
+.building-wrapper {
+  display: flex;
+  margin: 20px;
+  min-width: fit-content;
+}
+
+.brick-wall {
+  min-width: 30px;
+  background-color: #660300;
+  background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+}

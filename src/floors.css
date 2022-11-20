@@ -1,0 +1,47 @@
+.floor {
+  height: 96px;
+  margin-right: 20px;
+  border-top: 2px solid silver;
+  border-bottom: 2px solid silver;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.floor-controls {
+  height: 80px;
+  width: 70px;
+  border: 1px solid silver;
+  border-radius: 4px;
+  display: flex;
+}
+.floor-number {
+  font-size: 10px;
+  font-weight: 500;
+  padding: 2px;
+  border-radius: 8px;
+  border: 1px solid orange;
+  height: 15px;
+  width: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 0 auto 4px;
+}
+.floor-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 2px;
+  background-color: white;
+  border: 1px solid goldenrod;
+}
+
+.floor-buttons-wrapper {
+  margin-left: 10px;
+  margin-right: 5px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
