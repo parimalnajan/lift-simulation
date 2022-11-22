@@ -1,13 +1,11 @@
-import "./styles.css";
-import "./building-wrapper.css";
-import "./floors.css";
+
 // import { generateSystem } from "./generateSystem.js";
 // import { handleGoingDown, handleGoingUp } from "./index";
 let floorCount = document.querySelector("#floorsInput");
 let liftCount = document.querySelector("#liftsInput");
 const building = document.querySelector("#building");
 
-export function generateSystem(x, y) {
+ function generateSystem(x, y) {
   building.innerHTML = "";
 
   for (let i = 0; i < x; i++) {
@@ -68,7 +66,7 @@ export function generateSystem(x, y) {
   let firstFloor = document.querySelector("#floor0");
   firstFloor.appendChild(liftWrapper);
 }
-export const handleGoingUp = (e) => {
+ const handleGoingUp = (e) => {
   const requestingFloorDiv = e.target.parentNode.parentNode.parentNode;
   var [x, requestedFloorNo] = requestingFloorDiv.id.split("floor");
 
@@ -128,7 +126,7 @@ export const handleGoingUp = (e) => {
     }
   }
 };
-export const handleGoingDown = (e) => {
+ const handleGoingDown = (e) => {
   handleGoingUp(e);
 };
 
@@ -139,9 +137,7 @@ generateButton.addEventListener("click", () =>
   generateSystem(floorCount.value, liftCount.value)
 );
 
-// 5
-// 7.5 (5+2.5)
-// 10
+
 
 // floorCount.addEventListener("input", () => generateSystem());
 // liftCount.addEventListener("input", () => generateSystem());
