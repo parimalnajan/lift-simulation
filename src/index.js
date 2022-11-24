@@ -131,7 +131,6 @@ const building = document.querySelector("#building");
 };
 
 const generateButton = document.querySelector("#generate");
-generateSystem(4, 5);
 
 generateButton.addEventListener("click", () =>
   generateSystem(floorCount.value, liftCount.value)
